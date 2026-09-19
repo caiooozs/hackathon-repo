@@ -24,7 +24,7 @@ const PASSOS = [
     icone: LuSparkles,
     titulo: "A IA entende o registro",
     texto:
-      "Identificamos o tipo de ocorrência, o local e denúncias parecidas na região.",
+      "Identificamos o tipo de ocorrência, o local e ocorrências parecidas na região.",
   },
   {
     icone: LuListChecks,
@@ -69,7 +69,7 @@ export default function Inicio() {
 
       <div>
         <BotaoLink href="/denuncia/como" className="text-base">
-          Registrar uma denúncia
+          Registrar uma ocorrência
           <LuArrowRight className="size-5" aria-hidden="true" />
         </BotaoLink>
       </div>

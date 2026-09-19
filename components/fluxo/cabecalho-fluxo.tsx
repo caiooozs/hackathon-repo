@@ -57,7 +57,7 @@ export function CabecalhoFluxo({
         aria-valuemax={TOTAL_ETAPAS}
         aria-valuenow={atual}
         aria-valuetext={rotulo}
-        aria-label="Progresso do registro da denúncia"
+        aria-label="Progresso do registro da ocorrência"
         className="flex flex-1 items-center gap-1.5"
       >
         {ETAPAS_FLUXO.map((e, i) => (

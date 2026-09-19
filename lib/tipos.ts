@@ -70,7 +70,7 @@ export const ETAPAS_STATUS: {
   titulo: string;
   detalhe: string;
 }[] = [
-  { id: "recebida", titulo: "Denúncia recebida", detalhe: "Registro confirmado" },
+  { id: "recebida", titulo: "Ocorrência recebida", detalhe: "Registro confirmado" },
   { id: "analise", titulo: "Em análise", detalhe: "Identificando e priorizando" },
   { id: "encaminhada", titulo: "Encaminhada", detalhe: "Órgão responsável definido" },
   { id: "atendimento", titulo: "Atendimento", detalhe: "Equipe em campo" },

@@ -32,24 +32,11 @@ export default function OcorrenciaRecebida() {
           Ocorrência recebida com sucesso!
         </h1>
         <p className="mt-2 text-[0.95rem] leading-relaxed text-muted-foreground text-pretty">
-          Sua denúncia já está com a Prefeitura e será encaminhada para{" "}
+          Sua ocorrência já está com a Prefeitura e será encaminhada para{" "}
           <strong className="font-semibold text-navy">
             {CATEGORIAS[ultima.categoria].orgao}
           </strong>
           .
-        </p>
-      </div>
-
-      <div className="rounded-2xl bg-brand-softer p-4 text-center ring-1 ring-brand/10">
-        <p className="text-[0.78rem] font-semibold tracking-wide text-muted-foreground uppercase">
-          Número do protocolo
-        </p>
-        <p className="mt-1 text-2xl font-extrabold tracking-tight text-navy tabular-nums">
-          #{ultima.protocolo}
-        </p>
-        <p className="mt-1 text-[0.8rem] text-muted-foreground">
-          Registrada em {formatarDataHora(ultima.criadaEm)} · {ultima.endereco}
-          {ultima.bairro && `, ${ultima.bairro}`}
         </p>
       </div>
 
@@ -60,20 +47,10 @@ export default function OcorrenciaRecebida() {
       {ultima.ocorrenciasProximas > 0 && (
         <Mapa
           variante="calor"
-          descricao={`Mapa de calor em torno de ${ultima.endereco}, indicando concentração de denúncias semelhantes.`}
-          legenda={<SeloMapa>{ultima.ocorrenciasProximas} denúncias</SeloMapa>}
+          descricao={`Mapa de calor em torno de ${ultima.endereco}, indicando concentração de ocorrências semelhantes.`}
+          legenda={<SeloMapa>{ultima.ocorrenciasProximas} ocorrências</SeloMapa>}
         />
       )}
-
-      <section aria-labelledby="proximos-passos" className="space-y-3">
-        <h2 id="proximos-passos" className="text-[0.95rem] font-bold text-navy">
-          O que acontece agora
-        </h2>
-        <LinhaTempo
-          status={ultima.status}
-          carimbos={{ recebida: formatarDataHora(ultima.criadaEm) }}
-        />
-      </section>
 
       <p className="rounded-2xl bg-white p-3.5 text-[0.82rem] leading-snug text-muted-foreground ring-1 ring-border">
         Guarde o número do protocolo: com ele você consulta o andamento em

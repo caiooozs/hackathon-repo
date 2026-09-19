@@ -8,11 +8,11 @@ import { Tela, TituloTela } from "@/components/comuns/tela";
 export const metadata: Metadata = {
   title: "Mapa de ocorrências",
   description:
-    "Denúncias registradas por bairro no Recife, com base no Painel de Controle Social da Prefeitura.",
+    "Ocorrências registradas por bairro no Recife, com base no Painel de Controle Social da Prefeitura.",
 };
 
 /**
- * Recorte de denúncias por bairro — setembro de 2025.
+ * Recorte de ocorrências por bairro — setembro de 2025.
  * Fonte: Painel de Controle Social da Prefeitura do Recife
  * (Natureza = Denúncia, Ano/Mês = 2025/set).
  */
@@ -52,13 +52,13 @@ export default function MapaOcorrencias() {
 
       <TituloTela
         titulo="Mapa de ocorrências"
-        apoio="Veja onde os problemas se repetem. Denúncias recorrentes na mesma região ganham prioridade no atendimento."
+        apoio="Veja onde os problemas se repetem. Ocorrências recorrentes na mesma região ganham prioridade no atendimento."
       />
 
       <Mapa
         variante="calor"
-        descricao="Mapa de calor ilustrativo do Recife com concentração de denúncias por região."
-        legenda={<SeloMapa>676 denúncias em set./2025</SeloMapa>}
+        descricao="Mapa de calor ilustrativo do Recife com concentração de ocorrências por região."
+        legenda={<SeloMapa>676 ocorrências em set./2025</SeloMapa>}
       />
 
       <ul className="flex flex-wrap gap-x-4 gap-y-2">
@@ -76,7 +76,7 @@ export default function MapaOcorrencias() {
 
       <section aria-labelledby="por-bairro" className="space-y-3">
         <h2 id="por-bairro" className="text-[0.95rem] font-bold text-navy">
-          Denúncias por bairro
+          Ocorrências por bairro
         </h2>
         <ol className="space-y-2.5">
           {BAIRROS.map((b) => (
@@ -85,13 +85,13 @@ export default function MapaOcorrencias() {
                 <span className="font-semibold text-navy">{b.nome}</span>
                 <span className="tabular-nums text-muted-foreground">
                   {b.total}
-                  <span className="sr-only"> denúncias</span>
+                  <span className="sr-only"> ocorrências</span>
                 </span>
               </div>
               <div
                 className="h-2 overflow-hidden rounded-full bg-brand-soft"
                 role="img"
-                aria-label={`${b.nome}: ${b.total} denúncias`}
+                aria-label={`${b.nome}: ${b.total} ocorrências`}
               >
                 <div
                   className="h-full rounded-full bg-brand"
@@ -106,14 +106,14 @@ export default function MapaOcorrencias() {
       <p className="flex items-start gap-2.5 rounded-2xl bg-brand-softer p-3.5 text-[0.8rem] leading-snug text-muted-foreground ring-1 ring-brand/10">
         <LuInfo className="mt-0.5 size-4 shrink-0 text-brand" aria-hidden="true" />
         Fonte: Painel de Controle Social da Prefeitura do Recife — recorte de
-        setembro de 2025 (natureza “Denúncia”). Tempo médio de resposta no
+        setembro de 2025. Tempo médio de resposta no
         período: 41 dias.
       </p>
 
       <div className="mt-auto pt-2">
         <BotaoLink href="/denuncia/como">
           <LuPlus className="size-5" aria-hidden="true" />
-          Registrar denúncia neste local
+          Registrar ocorrência neste local
         </BotaoLink>
       </div>
     </Tela>

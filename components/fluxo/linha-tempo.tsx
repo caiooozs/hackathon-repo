@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 import { ETAPAS_STATUS, indiceStatus, type StatusDenuncia } from "@/lib/tipos";
 
 /**
- * Linha do tempo do tratamento da denúncia.
+ * Linha do tempo do tratamento da ocorrência.
  * Usa lista ordenada para que leitores de tela anunciem a sequência e o estado
  * de cada etapa em texto (não apenas por cor/ícone).
  */

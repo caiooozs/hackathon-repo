@@ -15,7 +15,7 @@ import type {
   ModoRegistro,
 } from "@/lib/tipos";
 
-/** Rascunho da denúncia em construção ao longo do fluxo de registro. */
+/** Rascunho da ocorrência em construção ao longo do fluxo de registro. */
 export interface Rascunho {
   modo: ModoRegistro | null;
   titulo: string;

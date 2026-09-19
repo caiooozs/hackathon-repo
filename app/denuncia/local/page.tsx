@@ -25,7 +25,7 @@ export default function LocalDaOcorrencia() {
 
       <TituloTela
         titulo="Onde fica o problema?"
-        apoio="O endereço é o que permite encaminhar a denúncia para a equipe certa."
+        apoio="O endereço é o que permite encaminhar a ocorrência para a equipe certa."
       />
 
       <CampoLocal />
@@ -43,7 +43,7 @@ export default function LocalDaOcorrencia() {
           className="text-center text-[0.8rem] text-muted-foreground"
         >
           {valido
-            ? "Vamos analisar o registro e buscar ocorrências parecidas."
+            ? "Vamos reunir as informações do seu registro."
             : "Informe o endereço para continuar."}
         </p>
       </div>

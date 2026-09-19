@@ -21,7 +21,7 @@ export default function Detalhes() {
 
   return (
     <Tela>
-      <CabecalhoFluxo etapa="detalhes" voltarPara="/denuncia/analise" />
+      <CabecalhoFluxo etapa="detalhes" voltarPara="/denuncia/local" />
 
       <TituloTela
         titulo={

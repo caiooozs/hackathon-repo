@@ -117,7 +117,7 @@ export function Mapa({
   );
 }
 
-/** Selo sobreposto ao mapa (ex.: "12 denúncias nesta região"). */
+/** Selo sobreposto ao mapa (ex.: "12 ocorrências nesta região"). */
 export function SeloMapa({ children }: { children: React.ReactNode }) {
   return (
     <span className="absolute top-3 right-3 rounded-full bg-white px-3 py-1.5 text-[0.8rem] font-bold text-navy shadow-md">

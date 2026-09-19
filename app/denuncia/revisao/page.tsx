@@ -81,7 +81,7 @@ export default function Revisao() {
       <div className="space-y-3 pt-1">
         <Botao onClick={enviarDenuncia} disabled={enviando}>
           <LuMailCheck className="size-5" aria-hidden="true" />
-          {enviando ? "Enviando…" : "Enviar denúncia"}
+          {enviando ? "Enviando…" : "Enviar ocorrência"}
         </Botao>
 
         <BotaoLink href="/denuncia/editar" variante="texto" className="min-h-11">
@@ -92,7 +92,7 @@ export default function Revisao() {
         <AvisoOrgao />
 
         <p className="text-center text-[0.78rem] text-muted-foreground">
-          A denúncia será encaminhada para{" "}
+          A ocorrência será encaminhada para{" "}
           <strong className="font-semibold text-navy">
             {CATEGORIAS[rascunho.categoria ?? "outro"].orgao}
           </strong>
