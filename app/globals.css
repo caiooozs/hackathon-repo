@@ -128,3 +128,72 @@
     @apply font-sans;
   }
 }
+/* ---------------------------------------------------------------
+   Recife Resolvendo — identidade visual
+   Azul institucional + amarelo da marca, sobre fundo levemente azulado.
+   --------------------------------------------------------------- */
+@theme inline {
+  --color-brand: var(--brand);
+  --color-brand-hover: var(--brand-hover);
+  --color-brand-soft: var(--brand-soft);
+  --color-brand-softer: var(--brand-softer);
+  --color-navy: var(--navy);
+  --color-yellow: var(--yellow);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-danger: var(--danger);
+}
+
+:root {
+  --brand: #1552f0;
+  --brand-hover: #0f43cc;
+  --brand-soft: #e8efff;
+  --brand-softer: #f4f8ff;
+  --navy: #10256b;
+  --yellow: #ffc20e;
+  --success: #12823f;
+  --warning: #b45309;
+  --danger: #d92d20;
+
+  --background: #ffffff;
+  --foreground: #1a2340;
+  --card: #ffffff;
+  --card-foreground: #1a2340;
+  --primary: #1552f0;
+  --primary-foreground: #ffffff;
+  --secondary: #e8efff;
+  --secondary-foreground: #10256b;
+  --muted: #f1f5fd;
+  --muted-foreground: #556080;
+  --accent: #e8efff;
+  --accent-foreground: #10256b;
+  --border: #dfe6f5;
+  --input: #dfe6f5;
+  --ring: #1552f0;
+  --radius: 0.875rem;
+}
+
+@layer base {
+  body {
+    background:
+      radial-gradient(120% 55% at 50% 0%, #eef4ff 0%, #ffffff 60%) no-repeat,
+      #ffffff;
+  }
+  /* Foco sempre visível e com contraste suficiente (WCAG 2.4.7 / 1.4.11) */
+  :focus-visible {
+    outline: 3px solid var(--brand);
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
