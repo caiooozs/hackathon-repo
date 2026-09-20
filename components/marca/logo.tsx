@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 
-/** Marca "Recife Resolvendo": anel azul com núcleo amarelo + assinatura. */
+/** Marca "Conecta+": anel azul com núcleo amarelo + assinatura. */
 export function Logo({
   className,
   assinatura = true,
@@ -23,7 +23,7 @@ export function Logo({
         viewBox="0 0 48 48"
         className={cn(simbolo, "shrink-0")}
         role="img"
-        aria-label="Recife Resolvendo"
+        aria-label="Conecta+"
       >
         <path
           d="M24 4a20 20 0 1 0 14.5 33.7"
@@ -43,9 +43,7 @@ export function Logo({
       </svg>
       {assinatura && (
         <span className={cn("font-extrabold tracking-tight text-navy", texto)}>
-          Recife
-          <br />
-          Resolvendo
+          Conecta+
         </span>
       )}
     </span>

@@ -1,5 +1,5 @@
 /**
- * Tipos e dados de domínio do Recife Resolvendo.
+ * Tipos e dados de domínio do Conecta+.
  *
  * O produto cobre a jornada descrita na documentação (seção 10): identificar o
  * problema, registrar, informar local/evidências e enviar a manifestação.

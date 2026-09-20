@@ -62,10 +62,6 @@ export default function OcorrenciaRecebida() {
           <LuPlus className="size-5" aria-hidden="true" />
           Registrar outra ocorrência
         </BotaoLink>
-        <BotaoLink href="/mapa" variante="contorno">
-          <LuMap className="size-5" aria-hidden="true" />
-          Ver mapa de ocorrências
-        </BotaoLink>
         <BotaoLink href="/" variante="texto" className="min-h-11">
           <LuHouse className="size-4" aria-hidden="true" />
           Voltar para o início

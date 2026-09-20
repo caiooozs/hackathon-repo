@@ -13,8 +13,8 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: {
-    default: "Recife Resolvendo",
-    template: "%s · Recife Resolvendo",
+    default: "Conecta+",
+    template: "%s · Conecta+",
   },
   description:
     "Registre problemas urbanos em poucos toques e acompanhe cada etapa do atendimento. Você mostra. A cidade entende.",

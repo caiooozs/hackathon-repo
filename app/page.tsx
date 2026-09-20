@@ -45,12 +45,6 @@ export default function Inicio() {
     <Tela className="gap-7">
       <header className="flex items-center justify-between py-2">
         <Logo />
-        <Link
-          href="/mapa"
-          className="rounded-full px-3 py-2.5 text-sm font-semibold text-brand hover:bg-brand-soft"
-        >
-          Mapa
-        </Link>
       </header>
 
       <section className="space-y-4">
@@ -129,13 +123,6 @@ export default function Inicio() {
           variante="radar"
           descricao="Mapa ilustrativo do seu bairro com oito ocorrências registradas nos últimos 30 dias."
         />
-        <Link
-          href="/mapa"
-          className="inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-brand hover:underline"
-        >
-          <LuMap className="size-4" aria-hidden="true" />
-          Ver mapa de ocorrências
-        </Link>
       </section>
 
       <footer className="mt-2 border-t border-border pt-5">

@@ -1,4 +1,4 @@
-# Recife Resolvendo
+# Conecta+
 
 > Você mostra. A cidade entende.
 

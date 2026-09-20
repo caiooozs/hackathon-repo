@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import { Entrada } from "./entrada";
 
 /**
  * Coluna central mobile-first. Em telas grandes a interface continua com a
@@ -12,14 +13,15 @@ export function Tela({
   className?: string;
 }) {
   return (
-    <div
+    <Entrada
+      sequencia
       className={cn(
         "mx-auto flex w-full max-w-[30rem] flex-1 flex-col gap-5 px-5 pt-3 pb-10",
         className
       )}
     >
       {children}
-    </div>
+    </Entrada>
   );
 }
 
